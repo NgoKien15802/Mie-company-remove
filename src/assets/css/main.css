@@ -87,6 +87,7 @@ a:focus {
     position: relative;
     height: 90px;
     background: #fdbe33;
+    margin-top: 80px;
 }
 
 .top-bar .logo {
@@ -165,6 +166,7 @@ a:focus {
     position: relative;
     background: #fdbe33;
     transition: .3s;
+
 }
 
 .nav-bar .container-fluid {
@@ -175,7 +177,6 @@ a:focus {
     position: fixed;
     top: 0;
     width: 100%;
-    max-width: 1366px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
     z-index: 999;
 }
@@ -183,6 +184,7 @@ a:focus {
 .nav-bar .navbar {
     height: 100%;
     background: #030f27 !important;
+
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -287,6 +289,11 @@ a:focus {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 0;
+}
+
+#carouselExampleControls .carousel-item img{
+    border-radius: 99%;
 }
 
 /* .carousel .carousel-item::after {
@@ -1147,7 +1154,7 @@ a:focus {
     margin: 45px 0;
     padding: 90px 0;
     text-align: center;
-    background: linear-gradient(rgba(3, 15, 39, .9), rgba(3, 15, 39, .9)), url(~/img/carousel-1.jpg);
+    background: linear-gradient(rgba(3, 15, 39, .9), rgba(3, 15, 39, .9)), url(../../assets/img/carousel-1.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -2256,18 +2263,18 @@ a:focus {
     max-height: 50%;
     background-position: center;
   }
-  .card {
+  .carousel-inner .card {
     margin: 0 0.5em;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-    border: none;
-    border-radius: 0;
+    border-top-right-radius: 99% !important;
+    border-top-left-radius: 99% !important;
     width: 350px;
   }
   .carousel-inner {
     padding: 1em;
   }
-  .carousel-control-prev,
-  .carousel-control-next {
+  .carousel-inner .carousel-control-prev,
+  .carousel-inner .carousel-control-next {
     background-color: #e1e1e1;
     width: 5vh !important;
     height: 5vh;
@@ -2275,12 +2282,12 @@ a:focus {
     top: 50% !important;
   }
 
-  .carousel-control-prev{
+  .carousel-inner .carousel-control-prev{
     left: 20% !important;
-    background-color: #030f27;
+    background-color: #030f27 ;
   }
 
-  .carousel-control-next{
+  .carousel-inner .carousel-control-next{
     right: 20% !important;
     background-color: #030f27;
   }

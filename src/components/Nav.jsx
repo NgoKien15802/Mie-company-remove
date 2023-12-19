@@ -1,6 +1,54 @@
+import { NavLink } from 'react-router-dom';
+
 const Nav = () => {
+    const navList = [
+        {
+            to: '/',
+            text: 'Home',
+            isActive: true,
+        },
+        {
+            to: '/about',
+            text: 'About',
+            isActive: false,
+        },
+        {
+            to: '/service',
+            text: 'Service',
+            isActive: false,
+        },
+        {
+            to: '/team',
+            text: 'Team',
+            isActive: false,
+        },
+        {
+            to: '/project',
+            text: 'Project',
+            isActive: false,
+        },
+        {
+            to: '/contact',
+            text: 'Contact',
+            isActive: false,
+        },
+        {
+            to: '/blog',
+            text: 'Blog',
+            isActive: false,
+        },
+    ];
+
+    const handleClickNav = (index)=>{
+        navList.map((el)=>{
+            if(el.isActive){
+                return el.isActive = false
+            }
+        })
+        navList[index].isActive = true;
+    }
     return (
-        <div className="nav-bar">
+        <div className="nav-bar nav-sticky">
             <div className="container-fluid">
                 <nav className="navbar navbar-expand-lg bg-dark navbar-dark ">
                     <a href="#" className="navbar-brand">
@@ -17,42 +65,11 @@ const Nav = () => {
 
                     <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div className="navbar-nav mr-auto">
-                            <a href="index.html" className="nav-item nav-link active">
-                                Home
-                            </a>
-                            <a href="about.html" className="nav-item nav-link">
-                                About
-                            </a>
-                            <a href="service.html" className="nav-item nav-link">
-                                Service
-                            </a>
-                            <a href="team.html" className="nav-item nav-link">
-                                Team
-                            </a>
-                            <a href="portfolio.html" className="nav-item nav-link">
-                                Project
-                            </a>
-                            <div className="nav-item dropdown">
-                                <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">
-                                    Pages
-                                </a>
-                                <div className="dropdown-menu">
-                                    <a href="blog.html" className="dropdown-item">
-                                        Blog Page
-                                    </a>
-                                    <a href="single.html" className="dropdown-item">
-                                        Single Page
-                                    </a>
-                                </div>
-                            </div>
-                            <a href="contact.html" className="nav-item nav-link">
-                                Contact
-                            </a>
-                        </div>
-                        <div className="ml-auto">
-                            <a className="btn" href="https://freewebsitecode.com">
-                                Download All Template
-                            </a>
+                            {navList.map((el, index) => (
+                                <NavLink to={el.to} className={`nav-item nav-link ${el.isActive ? 'active' : ''}`} key={index} onClick={()=> handleClickNav(index)}>
+                                    {el.text}
+                                </NavLink>
+                            ))}
                         </div>
                     </div>
                 </nav>
