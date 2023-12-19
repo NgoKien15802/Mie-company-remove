@@ -264,6 +264,8 @@ a:focus {
 /*******************************/
 /******** Carousel CSS *********/
 /*******************************/
+
+
 .carousel {
     position: relative;
     width: 100%;
@@ -287,7 +289,7 @@ a:focus {
     object-fit: cover;
 }
 
-.carousel .carousel-item::after {
+/* .carousel .carousel-item::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -296,7 +298,7 @@ a:focus {
     left: 0;
     background: rgba(0, 0, 0, .3);
     z-index: 1;
-}
+} */
 
 .carousel .carousel-caption {
     position: absolute;
@@ -1267,7 +1269,7 @@ a:focus {
 .blog .blog-title h3 {
     margin: 0;
     padding: 0 15px 0 25px;
-    width: calc(100% - 60px);
+    width: 100%;
     font-size: 18px;
     font-weight: 700;
     color: #fdbe33;
@@ -1275,6 +1277,7 @@ a:focus {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    text-align: center;
 }
 
 .blog .blog-title a.btn {
@@ -2241,3 +2244,51 @@ a:focus {
         text-align: center;
     }
 }
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  .card img {
+    max-width: 100%;
+    max-height: 50%;
+    background-position: center;
+  }
+  .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+    width: 350px;
+  }
+  .carousel-inner {
+    padding: 1em;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh !important;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50% !important;
+  }
+
+  .carousel-control-prev{
+    left: 20% !important;
+    background-color: #030f27;
+  }
+
+  .carousel-control-next{
+    right: 20% !important;
+    background-color: #030f27;
+  }
+
+
+
+  @media (min-width: 768px) {
+    .card img {
+      height: 11em;
+    }
+  }

@@ -52,24 +52,10 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-        <div className="container footer-menu">
-            <div className="f-menu">
-                <a href="">Terms of use</a>
-                <a href="">Privacy policy</a>
-                <a href="">Cookies</a>
-                <a href="">Help</a>
-                <a href="">FQAs</a>
-            </div>
-        </div>
         <div className="container copyright">
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-12">
                     <p>&copy; <a href="https://freewebsitecode.com">Your Site Name</a>, All Right Reserved.</p>
-                </div>
-                
-                
-                <div className="col-md-6">
-                    <p>Designed By <a href="https://freewebsitecode.com">Free Website Code</a></p>
                 </div>
             </div>
         </div>

@@ -1,7 +1,9 @@
+/* eslint-disable no-undef */
 (function ($) {
     "use strict";
     
     // Initiate the wowjs
+    // eslint-disable-next-line no-undef
     new WOW().init();
     
     
@@ -64,10 +66,12 @@
         });
         console.log($videoSrc);
 
+        // eslint-disable-next-line no-unused-vars
         $('#videoModal').on('shown.bs.modal', function (e) {
             $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
         })
 
+        // eslint-disable-next-line no-unused-vars
         $('#videoModal').on('hide.bs.modal', function (e) {
             $("#video").attr('src', $videoSrc);
         })

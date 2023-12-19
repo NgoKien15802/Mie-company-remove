@@ -2,7 +2,7 @@ const Nav = () => {
     return (
         <div className="nav-bar">
             <div className="container-fluid">
-                <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
+                <nav className="navbar navbar-expand-lg bg-dark navbar-dark ">
                     <a href="#" className="navbar-brand">
                         MENU
                     </a>

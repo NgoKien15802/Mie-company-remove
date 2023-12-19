@@ -1,56 +1,71 @@
 import testimonial1 from '~/assets/img/testimonial-1.jpg';
 
-const Testimonial = () => {
-    const Testimonials = [
+const Carousel = () => {
+    const carousels = [
         {
-            avt: testimonial1,
-            name: 'Customer Name',
-            profession: 'profession',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.',
+            img: {
+                src: testimonial1,
+                alt: 'Carousel Image',
+            },
+            name:'Kien',
+            comment:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis nostrum, placeat ea illo cum dolor autem quis. Expedita, impedit neque, temporibus aut praesentium deserunt non nemo id ipsa assumenda aliquam.',
+            isActive: true,
+        },
+
+        {
+            img: {
+                src: testimonial1,
+                alt: 'Carousel Image',
+            },
+            name:'Kien',
+            comment:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis nostrum, placeat ea illo cum dolor autem quis. Expedita, impedit neque, temporibus aut praesentium deserunt non nemo id ipsa assumenda aliquam.',
+            isActive: false,
         },
         {
-            avt: testimonial1,
-            name: 'Customer Name',
-            profession: 'profession',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.',
-        },
-        {
-            avt: testimonial1,
-            name: 'Customer Name',
-            profession: 'profession',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus.',
+            img: {
+                src: testimonial1,
+                alt: 'Carousel Image',
+            },
+            name:'Kien',
+            comment:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis nostrum, placeat ea illo cum dolor autem quis. Expedita, impedit neque, temporibus aut praesentium deserunt non nemo id ipsa assumenda aliquam.',
+            isActive: false,
         },
     ];
     return (
-        <div className="testimonial wow fadeIn" data-wow-delay="0.1s">
-            <div className="container">
-                <div className="row">
-                    <div className="col-12">
-                        <div className="testimonial-slider-nav">
-                            {Testimonials.map((el, index) => (
-                                <div className="slider-nav" key={index}>
-                                    <img src={el.avt} alt="Testimonial" />
-                                </div>
-                            ))}
-                        </div>
+        <>
+            <div className="section-header text-center">
+                        <p>Our customer</p>
+                        <h2>Comment about our company</h2>
                     </div>
-                </div>
-                <div className="row">
-                    <div className="col-12">
-                        <div className="testimonial-slider">
-                            {Testimonials.map((el, index) => (
-                                <div className="slider-item" key={index}>
-                                    <h3>{el.name}</h3>
-                                    <h4>{el.profession}</h4>
-                                    <p>{el.text}</p>
+            <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+                <div className="carousel-inner">
+                    {carousels.map((el,index) => (
+                        <div className={`carousel-item ${el.isActive ? 'active' : ''}`} key={index}>
+                            <div className="cards-wrapper">
+                                <div className="card">
+                                    <img src={el.img.src} className="card-img-top" alt={el.img.alt} />
+                                    <div className="card-body">
+                                        <h5 className="card-title">{el.name}</h5>
+                                        <p className="card-text">
+                                            {el.comment}
+                                        </p>
+                                    </div>
                                 </div>
-                            ))}
+                            </div>
                         </div>
-                    </div>
+                    ))}
                 </div>
+                <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Previous</span>
+                </a>
+                <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Next</span>
+                </a>
             </div>
-        </div>
+        </>
     );
 };
 
-export default Testimonial;
+export default Carousel;
