@@ -1,5 +1,41 @@
 {
-    "nav": {
-        "hello": "Hello home page"
+    "Nav": {
+        "CompanyName": "Mie",
+        "OpeningHour": "Opening Hour",
+        "Day": "Mon - Fri",
+        "CallUs": "Call Us",
+        "EmailUs": "Email Us"
+    },
+    "Feature": {
+        "ExpertWorker": "Expert Worker",
+        "QualityWork": "Quality Work",
+        "Support": "Support"
+    },
+    "About": {
+        "Welcometo": "Welcome to ",
+        "YearEx":"Years Experience"
+    },
+    "Fact":{
+        "HappyClients":"HAPPY CLIENTS",
+        "CompletedProject":"COMPLETED PROJECTS",
+        "RunningProject":"RUNNING PROJECTS"
+    },
+    "Service":{
+        "OurServices":"Our Services",
+        "ProvideServices":"We Provide Services"
+    },
+    "Team":{
+        "OurTeam":"Our Team",
+        "ProvideServices":"We Provide Services",
+        "OurEngineer":"Meet Our Engineer"
+    },
+    "Customer":{
+        "OurCustomer":"Our customer",
+        "Comment about our company":"Comment about our company"
+    },
+    "Blog":{
+        "Latest Blog":"Latest Blog",
+        "Latest From Our Blog":"Latest From Our Blog",
+        "By":"By"
     }
 }

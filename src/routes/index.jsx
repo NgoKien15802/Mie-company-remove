@@ -5,6 +5,9 @@ import HomePage from '~/pages/home/HomePage';
 import AboutPage from '~/pages/about/AboutPage';
 import ServicePage from '~/pages/service/ServicePage';
 import TeamPage from '~/pages/team/TeamPage';
+import ProjectPage from '~/pages/project/ProjectPage';
+import ContactPage from '~/pages/contact/ContactPage';
+import BlogPage from '~/pages/blog/BlogPage';
 
 const index = () => {
     return (
@@ -15,6 +18,9 @@ const index = () => {
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/service" element={<ServicePage />} />
                 <Route path="/team" element={<TeamPage />} />
+                <Route path="/project" element={<ProjectPage />} />
+                <Route path="/contact" element={<ContactPage />} />
+                <Route path="/blog" element={<BlogPage />} />
                 
             </Route>
         </Routes>

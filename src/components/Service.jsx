@@ -1,5 +1,8 @@
+import { useTranslation } from 'react-i18next';
 import serviceImage from '~/assets/img/service-1.jpg';
 const Service = () => {
+    const {t} = useTranslation();
+
     const services = [
         {
             src: serviceImage,
@@ -21,8 +24,8 @@ const Service = () => {
         <div className="service">
             <div className="container">
                 <div className="section-header text-center">
-                    <p>Our Services</p>
-                    <h2>We Provide Services</h2>
+                    <p>{t("Service.OurServices")}</p>
+                    <h2>{t("Service.ProvideServices")}</h2>
                 </div>
                 <div className="row">
                     {services.map((el,index) => (

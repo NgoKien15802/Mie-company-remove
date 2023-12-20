@@ -1,8 +1,11 @@
+import { useTranslation } from 'react-i18next';
 import team1 from '~/assets/img/team-1.jpg';
 import team2 from '~/assets/img/team-2.jpg';
 import team3 from '~/assets/img/team-3.jpg';
 import team4 from '~/assets/img/team-4.jpg';
 const Team = () => {
+    const {t} = useTranslation();
+
     const teams = [
         {
             avt: team1,
@@ -53,8 +56,8 @@ const Team = () => {
         <div className="team">
             <div className="container">
                 <div className="section-header text-center">
-                    <p>Our Team</p>
-                    <h2>Meet Our Engineer</h2>
+                    <p>{t("Team.OurTeam")}</p>
+                    <h2>{t("Team.OurEngineer")}</h2>
                 </div>
                 <div className="row">
                     {teams.map((el, index) => (

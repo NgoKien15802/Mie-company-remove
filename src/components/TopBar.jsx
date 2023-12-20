@@ -1,8 +1,10 @@
 import calendar from '~/assets/img/calendar.png';
 import telephone from '~/assets/img/telephone.png';
 import message from '~/assets/img/message.png';
+import { useTranslation } from 'react-i18next';
 
 const TopBar = () => {
+    const {t} = useTranslation();
     return (
         <div className="top-bar">
             <div className="container-fluid">
@@ -10,7 +12,7 @@ const TopBar = () => {
                     <div className="col-lg-4 col-md-12">
                         <div className="logo">
                             <a href="index.html">
-                                <h1>Builderz</h1>
+                                <h1>{t('Nav.CompanyName')}</h1>
                             </a>
                         </div>
                     </div>
@@ -22,8 +24,8 @@ const TopBar = () => {
                                         <img src={calendar} className=" flaticon flaticon-worker" />
                                     </div>
                                     <div className="top-bar-text">
-                                        <h3>Opening Hour</h3>
-                                        <p>Mon - Fri, 8:00 - 9:00</p>
+                                        <h3>{t('Nav.OpeningHour')}</h3>
+                                        <p>{t('Nav.Day')}, 8:00 - 17:00</p>
                                     </div>
                                 </div>
                             </div>
@@ -33,8 +35,8 @@ const TopBar = () => {
                                         <img src={telephone} className=" flaticon flaticon-worker" />
                                     </div>
                                     <div className="top-bar-text">
-                                        <h3>Call Us</h3>
-                                        <p>+012 345 6789</p>
+                                        <h3>{t('Nav.CallUs')}</h3>
+                                        <p>{import.meta.env.VITE_MOBILE_PHONE}</p>
                                     </div>
                                 </div>
                             </div>
@@ -44,8 +46,8 @@ const TopBar = () => {
                                         <img src={message} className=" flaticon flaticon-worker" />
                                     </div>
                                     <div className="top-bar-text">
-                                        <h3>Email Us</h3>
-                                        <p>info@example.com</p>
+                                        <h3>{t('Nav.EmailUs')}</h3>
+                                        <p>{import.meta.env.VITE_EMAIL}</p>
                                     </div>
                                 </div>
                             </div>

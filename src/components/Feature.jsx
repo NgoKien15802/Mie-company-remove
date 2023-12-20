@@ -1,8 +1,10 @@
 import workers from '~/assets/img/workers.png';
 import apartments from '~/assets/img/apartments.png';
 import telephone from '~/assets/img/telephone.png';
+import { useTranslation } from 'react-i18next';
 
 const Feature = () => {
+    const {t} = useTranslation();
     return (
         <div className="feature wow fadeInUp" data-wow-delay="0.1s">
             <div className="container-fluid">
@@ -13,7 +15,7 @@ const Feature = () => {
                                 <img src={workers} className=" flaticon flaticon-worker" />
                             </div>
                             <div className="feature-text">
-                                <h3>Expert Worker</h3>
+                                <h3>{t("Feature.ExpertWorker")}</h3>
                                 <p>Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non</p>
                             </div>
                         </div>
@@ -24,7 +26,7 @@ const Feature = () => {
                                 <img src={apartments} className=" flaticon flaticon-worker" />
                             </div>
                             <div className="feature-text">
-                                <h3>Quality Work</h3>
+                                <h3>{t('Feature.QualityWork')}</h3>
                                 <p>Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non</p>
                             </div>
                         </div>
@@ -35,7 +37,7 @@ const Feature = () => {
                                 <img src={telephone} className=" flaticon flaticon-worker" />
                             </div>
                             <div className="feature-text">
-                                <h3>24/7 Support</h3>
+                                <h3>24/7 {t("Feature.Support")}</h3>
                                 <p>Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare velit non</p>
                             </div>
                         </div>

@@ -49,12 +49,6 @@ const Carousel = () => {
                         <div className="carousel-caption">
                             <p className="animated fadeInRight">{el.p}</p>
                             <h1 className="animated fadeInLeft">{el.h1}</h1>
-                            <a
-                                className="btn animated fadeInUp"
-                                href="https://freewebsitecode.com/construction-company-website-template"
-                            >
-                                {el.a}
-                            </a>
                         </div>
                     </div>
                 ))}

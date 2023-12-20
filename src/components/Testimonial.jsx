@@ -1,6 +1,9 @@
+import { useTranslation } from 'react-i18next';
 import testimonial1 from '~/assets/img/testimonial-1.jpg';
 
 const Carousel = () => {
+    const {t} = useTranslation();
+
     const carousels = [
         {
             img: {
@@ -37,8 +40,8 @@ const Carousel = () => {
     return (
         <>
             <div className="section-header text-center">
-                    <p>Our customer</p>
-                    <h2>Comment about our company</h2>
+                    <p>{t("Customer.OurCustomer")}</p>
+                    <h2>{t("Customer.Comment about our company")}</h2>
                 </div>
             <div className="testimonial wow fadeIn">
                 

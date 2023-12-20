@@ -7,6 +7,7 @@ import Video from '~/components/Video';
 import Team from '~/components/Team';
 import Testimonial from '~/components/Testimonial';
 import Blog from '~/components/Blog';
+import Modal from '~/components/Modal';
 
 const HomePage = () => {
     return (
@@ -17,6 +18,7 @@ const HomePage = () => {
             <Fact />
             <Service />
             <Video />
+            <Modal />
             <Team />
             <Testimonial />
             <Blog />

@@ -6,11 +6,11 @@ const Footer = () => {
                 <div className="col-md-6 col-lg-3">
                     <div className="footer-contact">
                         <h2>Office Contact</h2>
-                        <p><i className="fa fa-map-marker-alt"></i>Your Location, City, Country</p>
-                        <p><i className="fa fa-phone-alt"></i>+012 345 67890</p>
-                        <p><i className="fa fa-envelope"></i>info@example.com</p>
+                        <p><i className="fa fa-map-marker-alt"></i>{import.meta.env.VITE_LOCATION}</p>
+                        <p><i className="fa fa-phone-alt"></i>{import.meta.env.VITE_MOBILE_PHONE}</p>
+                        <p><i className="fa fa-envelope"></i>{import.meta.env.VITE_EMAIL}</p>
                         <div className="footer-social">
-                            <a href="https://freewebsitecode.com/"><i className="fab fa-twitter"></i></a>
+                            <a href="https://freewebsitecode.com/"><img src="Icon_of_Zalo.svg" alt="" /></a>
                             <a href="https://facebook.com/freewebsitecode"><i className="fab fa-facebook-f"></i></a>
                             <a href="https://freewebsitecode.com/"><i className="fab fa-linkedin-in"></i></a>
                             <a href="https://freewebsitecode.com/"><i className="fab fa-instagram"></i></a>

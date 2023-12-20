@@ -1,5 +1,8 @@
+import { useTranslation } from 'react-i18next';
 import blog1 from '~/assets/img/blog-1.jpg';
 const Blog = () => {
+    const {t} = useTranslation();
+
     const blogs = [
         {
             src: blog1,
@@ -28,8 +31,8 @@ const Blog = () => {
         <div className="blog">
             <div className="container">
                 <div className="section-header text-center">
-                    <p>Latest Blog</p>
-                    <h2>Latest From Our Blog</h2>
+                    <p>{t("Blog.Latest Blog")}</p>
+                    <h2>{t("Blog.Latest From Our Blog")}</h2>
                 </div>
                 <div className="row">
                     {blogs.map((el, index) => (
@@ -40,10 +43,12 @@ const Blog = () => {
                                 </div>
                                 <div className="blog-title">
                                     <h3>{el.location}</h3>
+                                    <a className="btn" href={el.src} data-lightbox="service">+</a>
+
                                 </div>
                                 <div className="blog-meta">
                                     <p>
-                                        By<a href="">{el.created}</a>
+                                        {t('Blog.By')}<a href="">{el.created}</a>
                                     </p>
                                 </div>
                                 <div className="blog-text">
