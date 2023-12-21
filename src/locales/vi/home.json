@@ -1,5 +1,62 @@
 {
-    "nav": {
-        "companyName": "Mie"
+    "Nav": {
+        "CompanyName": "Mie",
+        "OpeningHour": "Giờ mở cửa",
+        "Day": "Thứ 2 - thứ 6",
+        "CallUs": "Gọi cho chúng tôi",
+        "EmailUs": "Gửi email cho chúng tôi",
+        "About Us":"Về chúng tôi",
+        "Contact Us":"Liên hệ chúng tôi",
+        "Our Team":"Đội của chúng tôi",
+        "Projects":"Dự án",
+        "Our Projects":"Dự án của chúng tôi",
+        "Servive":"Dịch vụ",
+        "BLog":"Bài viết",
+        "OurBLog":"Bài viết",
+        "Home":"Trang chủ",
+        "About":"Về chúng tôi",
+        "Service":"Dịch vụ",
+        "Team":"Đội của chúng tôi",
+        "Contact":"Liện hệ",
+        "BLogNav":"Bài viết"
+    },
+    "Feature": {
+        "ExpertWorker": "Công nhân chuyên môn",
+        "QualityWork": "Chất lượng công việc",
+        "Support": "Hỗ trợ"
+    },
+    "About": {
+        "Welcometo": "Chào mừng bạn đến ",
+        "YearEx":" năm kinh nghiệm"
+    },
+    "Fact":{
+        "HappyClients":"KHÁCH HÀNG",
+        "CompletedProject":"Dự án hoàn thành",
+        "RunningProject":"Dự án đang khởi công"
+    },
+    "Service":{
+        "OurServices":"Dịch vụ của chúng tôi",
+        "ProvideServices":"Chúng tôi cung cấp dịch vụ"
+    },
+    "Team":{
+        "OurTeam":"Đội của chúng tôi",
+        "ProvideServices":"Chúng tôi cung cấp dịch vụ",
+        "OurEngineer":"Gặp kỹ sư của chúng tôi"
+    },
+    "Customer":{
+        "OurCustomer":"Khách hàng của chúng tôi",
+        "Comment about our company":"Bình luận về công ty chúng tôi"
+    },
+    "Blog":{
+        "Latest Blog":"Bài viết mới nhất",
+        "Latest From Our Blog":"Bài viết mới nhất của chúng tôi",
+        "By":"Bởi"
+    },
+    "Footer":{
+        "Office Contact":"Văn phòng liên hệ",
+        "Useful Pages":"Trang hữu ích",
+        "Newsletter":"Nhận thông tin",
+        "Submit":"Gửi",
+        "Email here":"Nhập email"
     }
 }

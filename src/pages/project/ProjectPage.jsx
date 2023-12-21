@@ -1,8 +1,11 @@
 import TopHeader from '~/components/TopHeader';
 import portfolio1 from '~/assets/img/portfolio-1.jpg';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const ProjectPage = () => {
+    const {t} = useTranslation();
+
     let projects = [
         {
             src: portfolio1,
@@ -72,7 +75,7 @@ const ProjectPage = () => {
     };
     return (
         <>
-            <TopHeader page="Our Projects" currentPage="Home" />
+            <TopHeader page={t("Nav.Our Projects")} currentPage={t("Nav.Home")} />
             <div className="portfolio">
                 <div className="container">
                     <div className="section-header text-center">

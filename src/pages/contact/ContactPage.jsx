@@ -1,9 +1,12 @@
+import { useTranslation } from 'react-i18next';
 import TopHeader from '~/components/TopHeader';
 
 const ContactPage = () => {
+    const {t} = useTranslation();
+
     return (
         <div>
-            <TopHeader page="Contact Us" currentPage="Home" />
+            <TopHeader page={t("Nav.Contact Us")} currentPage={t("Nav.Home")} />
 
             <div className="contact wow fadeInUp">
                 <div className="container">

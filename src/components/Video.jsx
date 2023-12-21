@@ -6,7 +6,7 @@ const Video = () => {
                     type="button"
                     className="btn-play"
                     data-toggle="modal"
-                    data-src="https://www.youtube.com/live/DYYeIuoaDe8?si=d4wZmD-OXjDlbzdL"
+                    data-src="https://youtu.be/QCwag5A4KS0?si=rc_gM_lNAGcEYXAb"
                     data-target="#videoModal"
                 >
                     <span></span>

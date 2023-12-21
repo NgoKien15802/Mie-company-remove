@@ -1,51 +1,61 @@
+import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
+    const { t } = useTranslation();
+    const{i18n} = useTranslation();
+
     const navList = [
         {
             to: '/',
-            text: 'Home',
+            text: t('Nav.Home'),
             isActive: true,
         },
         {
             to: '/about',
-            text: 'About',
+            text: t('Nav.About'),
             isActive: false,
         },
         {
             to: '/service',
-            text: 'Service',
+            text: t('Nav.Service'),
             isActive: false,
         },
         {
             to: '/team',
-            text: 'Team',
+            text: t('Nav.Team'),
             isActive: false,
         },
         {
             to: '/project',
-            text: 'Project',
+            text: t('Nav.Projects'),
             isActive: false,
         },
         {
             to: '/contact',
-            text: 'Contact',
+            text: t('Nav.Contact'),
             isActive: false,
         },
         {
             to: '/blog',
-            text: 'Blog',
+            text: t('Nav.BLogNav'),
             isActive: false,
         },
     ];
 
-    const handleClickNav = (index)=>{
-        navList.map((el)=>{
-            if(el.isActive){
-                return el.isActive = false
+    const handleClickNav = (index) => {
+        navList.map((el) => {
+            if (el.isActive) {
+                return (el.isActive = false);
             }
-        })
+        });
         navList[index].isActive = true;
+    };
+
+
+
+    const handleClickLanguage = (value) => {
+        i18n.changeLanguage(value)
     }
     return (
         <div className="nav-bar nav-sticky">
@@ -66,12 +76,27 @@ const Nav = () => {
                     <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div className="navbar-nav mr-auto">
                             {navList.map((el, index) => (
-                                <NavLink to={el.to} className={`nav-item nav-link ${el.isActive ? 'active' : ''}`} key={index} onClick={()=> handleClickNav(index)}>
+                                <NavLink
+                                    to={el.to}
+                                    className={`nav-item nav-link ${el.isActive ? 'active' : ''}`}
+                                    key={index}
+                                    onClick={() => handleClickNav(index)}
+                                >
                                     {el.text}
                                 </NavLink>
                             ))}
                         </div>
                     </div>
+                    <select
+                        className="form-select"
+                        aria-label="Default select example"
+                        onChange={(e) => handleClickLanguage(e.target.value)}
+                    >
+                        <option value="vi" selected>
+                            Vietnamese
+                        </option>
+                        <option value="en">English</option>
+                    </select>
                 </nav>
             </div>
         </div>

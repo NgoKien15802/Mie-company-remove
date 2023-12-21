@@ -6,14 +6,14 @@ const Blog = () => {
     const blogs = [
         {
             src: blog1,
-            created: 'kien',
+            created: 'Turg Arcvietnam',
             location: 'Ha Noi',
             content:
                 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, alias excepturi cupiditate quia omnis odit consequuntur nulla voluptates! Excepturi enim nisi cumque distinctio consectetur est eligendi rerum eaque blanditiis maiores!',
         },
         {
             src: blog1,
-            created: 'kien',
+            created: 'Turg Arcvietnam',
             location: 'Ha Noi',
 
             content:
@@ -21,7 +21,7 @@ const Blog = () => {
         },
         {
             src: blog1,
-            created: 'kien',
+            created: 'Turg Arcvietnam',
             location: 'Ha Noi',
             content:
                 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, alias excepturi cupiditate quia omnis odit consequuntur nulla voluptates! Excepturi enim nisi cumque distinctio consectetur est eligendi rerum eaque blanditiis maiores!',

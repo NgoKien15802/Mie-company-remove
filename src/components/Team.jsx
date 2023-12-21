@@ -1,15 +1,15 @@
 import { useTranslation } from 'react-i18next';
-import team1 from '~/assets/img/team-1.jpg';
-import team2 from '~/assets/img/team-2.jpg';
-import team3 from '~/assets/img/team-3.jpg';
-import team4 from '~/assets/img/team-4.jpg';
+import team1 from '~/assets/img/avt.png';
+import team2 from '~/assets/img/avt.png';
+import team3 from '~/assets/img/avt.png';
+import team4 from '~/assets/img/avt.png';
 const Team = () => {
     const {t} = useTranslation();
 
     const teams = [
         {
             avt: team1,
-            name: 'Adam Phillips',
+            name: 'Turg Arcvietnam',
             jobPosition: 'CEO & Founder',
             social: {
                 twitter: '',
@@ -20,7 +20,7 @@ const Team = () => {
         },
         {
             avt: team2,
-            name: 'Adam Phillips',
+            name: 'Turg Arcvietnam',
             jobPosition: 'CEO & Founder',
             social: {
                 twitter: '',
@@ -31,7 +31,7 @@ const Team = () => {
         },
         {
             avt: team3,
-            name: 'Adam Phillips',
+            name: 'Turg Arcvietnam',
             jobPosition: 'CEO & Founder',
             social: {
                 twitter: '',
@@ -42,7 +42,7 @@ const Team = () => {
         },
         {
             avt: team4,
-            name: 'Adam Phillips',
+            name: 'Turg Arcvietnam',
             jobPosition: 'CEO & Founder',
             social: {
                 twitter: '',

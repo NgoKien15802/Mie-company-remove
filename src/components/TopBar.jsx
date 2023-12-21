@@ -2,6 +2,7 @@ import calendar from '~/assets/img/calendar.png';
 import telephone from '~/assets/img/telephone.png';
 import message from '~/assets/img/message.png';
 import { useTranslation } from 'react-i18next';
+import { NavLink } from 'react-router-dom';
 
 const TopBar = () => {
     const {t} = useTranslation();
@@ -11,9 +12,9 @@ const TopBar = () => {
                 <div className="row align-items-center">
                     <div className="col-lg-4 col-md-12">
                         <div className="logo">
-                            <a href="index.html">
+                            <NavLink to="/" style={{textDecoration:'none'}}>
                                 <h1>{t('Nav.CompanyName')}</h1>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                     <div className="col-lg-8 col-md-7 d-none d-lg-block">

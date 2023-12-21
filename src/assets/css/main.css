@@ -2144,6 +2144,7 @@ a:focus {
     border: 1px solid rgba(256, 256, 256, .3);
     border-radius: 60px;
     transition: .3s;
+    margin: 0 4px;
 }
 
 .footer .footer-social a i {
@@ -2158,6 +2159,20 @@ a:focus {
 
 .footer .footer-social a:hover i {
     color: #030f27;
+}
+
+.footer-social-zalo{
+    position: relative;
+    top: 14px;
+}
+
+.footer-social-zalo-img{
+    width: 100%;
+    border-radius: 999px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .footer .newsletter .form {
@@ -2299,3 +2314,10 @@ a:focus {
       height: 11em;
     }
   }
+
+  select.form-select {
+    height: 31px;
+    padding: 0 15px;
+    outline: none;
+    border-radius: 9px;
+}

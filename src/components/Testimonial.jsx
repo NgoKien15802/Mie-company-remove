@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import testimonial1 from '~/assets/img/testimonial-1.jpg';
+import testimonial1 from '~/assets/img/avt.png';
 
 const Carousel = () => {
     const {t} = useTranslation();
@@ -10,7 +10,7 @@ const Carousel = () => {
                 src: testimonial1,
                 alt: 'Carousel Image',
             },
-            name: 'Kien',
+            name: 'Turg Arcvietnam ',
             comment:
                 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis nostrum, placeat ea illo cum dolor autem quis. Expedita, impedit neque, temporibus aut praesentium deserunt non nemo id ipsa assumenda aliquam.',
             isActive: true,
@@ -21,7 +21,7 @@ const Carousel = () => {
                 src: testimonial1,
                 alt: 'Carousel Image',
             },
-            name: 'Kien',
+            name: 'Turg Arcvietnam ',
             comment:
                 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis nostrum, placeat ea illo cum dolor autem quis. Expedita, impedit neque, temporibus aut praesentium deserunt non nemo id ipsa assumenda aliquam.',
             isActive: false,
@@ -31,7 +31,7 @@ const Carousel = () => {
                 src: testimonial1,
                 alt: 'Carousel Image',
             },
-            name: 'Kien',
+            name: 'Turg Arcvietnam ',
             comment:
                 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis nostrum, placeat ea illo cum dolor autem quis. Expedita, impedit neque, temporibus aut praesentium deserunt non nemo id ipsa assumenda aliquam.',
             isActive: false,

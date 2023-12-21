@@ -4,7 +4,22 @@
         "OpeningHour": "Opening Hour",
         "Day": "Mon - Fri",
         "CallUs": "Call Us",
-        "EmailUs": "Email Us"
+        "EmailUs": "Email Us",
+        "About Us":"About Us",
+        "Contact Us":"Contact Us",
+        "Our Team":"Our Team",
+        "Projects":"Projects",
+        "Our Projects":"Our Projects",
+        "Servive":"Our Servive",
+        "BLog":"Our BLog",
+        "Home":"Home",
+        "OurBLog":"Our blog",
+        "About":"About",
+        "Service":"Service",
+        "Team":"Team",
+        "Contact":"Contact",
+        "BLogNav":"BLog",
+        "Language":"Language"
     },
     "Feature": {
         "ExpertWorker": "Expert Worker",
@@ -37,5 +52,12 @@
         "Latest Blog":"Latest Blog",
         "Latest From Our Blog":"Latest From Our Blog",
         "By":"By"
+    },
+    "Footer":{
+        "Office Contact":"Office Contact",
+        "Useful Pages":"Useful Pages",
+        "Newsletter":"Newsletter",
+        "Submit":"Submit",
+        "Email here":"Email here"
     }
 }
