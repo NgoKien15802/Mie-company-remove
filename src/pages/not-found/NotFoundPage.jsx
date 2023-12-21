@@ -1,8 +1,9 @@
 import { NavLink } from 'react-router-dom';
+import './NotFound.css';
 
 const NotFoundPage = () => {
     return (
-        <div>
+        <div className='not-found'>
             <NavLink to={'/'}>
                 <img srcSet="" alt="" />
             </NavLink>
